@@ -38,6 +38,10 @@ public class ApplicationDbContext : IdentityDbContext
     /// </summary>
     public DbSet<RestaurantOwner> RestaurantOwners { get; set; }
 
+    /// <summary>
+    /// Gets or sets the refresh tokens table database set
+    /// </summary>
+    public DbSet<RefreshToken> RefreshTokens { get; set; }
 
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
     : base(options)
